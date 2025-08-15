@@ -3,6 +3,7 @@ class EvidencePojistenych:
     """Třída sloužící k evidenci pojištěných osob."""
 
     def __init__(self):
+        """Inicializuje prázdnou evidenci pojištěných."""
         self.pojisteni = []
 
     def pridej_pojisteneho(self, pojisteny):
