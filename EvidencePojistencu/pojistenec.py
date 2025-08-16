@@ -1,5 +1,5 @@
 
-class Pojisteny:
+class Pojistenec:
     """Třída reprezentující pojištěnce v systému evidence pojištěnců."""
 
     def __init__(self, jmeno, prijmeni, vek, telefon):

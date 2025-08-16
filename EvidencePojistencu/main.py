@@ -1,30 +1,30 @@
 
-from rozhrani import UzivatelskeRozhrani
+from uzivatelske_rozhrani import UzivatelskeRozhrani
 
-rozhrani = UzivatelskeRozhrani()
-volba = 0
+uzivatelske_rozhrani = UzivatelskeRozhrani()
+volba_cisla = 0
 
 print("\nEvidence pojištěných")
 print("---------------------")
 
-while volba != 4:
-    rozhrani.zobraz_menu()
+while volba_cisla != 4:
+    uzivatelske_rozhrani.zobraz_menu()
     try:
-        volba = int(input("\nZadejte číslo volby: "))
+        volba_cisla = int(input("\nZadejte číslo volby: "))
     except ValueError:
         print("Zadejte platné číslo.")
         continue
 
-    if volba == 1:
-        rozhrani.vytvor_pojisteneho()
+    if volba_cisla == 1:
+        uzivatelske_rozhrani.vytvor_pojisteneho()
 
-    elif volba == 2:
-        rozhrani.vypis_pojistene()
+    elif volba_cisla == 2:
+        uzivatelske_rozhrani.vypis_pojistene()
 
-    elif volba == 3:
-        rozhrani.vyhledej_pojisteneho()
+    elif volba_cisla == 3:
+        uzivatelske_rozhrani.vyhledej_pojisteneho()
 
-    elif volba == 4:
+    elif volba_cisla == 4:
         print("Ukončuji program.")
         break
 

@@ -1,22 +1,22 @@
 
-class EvidencePojistenych:
+class EvidencePojistencu:
     """Třída sloužící k evidenci pojištěných osob."""
 
     def __init__(self):
         """Inicializuje prázdnou evidenci pojištěných."""
-        self.pojisteni = []
+        self.pojistenci = []
 
-    def pridej_pojisteneho(self, pojisteny):
+    def pridej_pojisteneho(self, pojistenec):
         """Přidá pojištěného do evidence."""
-        self.pojisteni.append(pojisteny)
+        self.pojistenci.append(pojistenec)
 
     def vypis_vsechny(self):
         """Vypíše všechny pojištěné osoby."""
-        return self.pojisteni
+        return self.pojistenci
 
     def vyhledej_pojisteneho(self, jmeno, prijmeni):
         """Vyhledá pojištěného podle jména a příjmení."""
         return [
-            pojisteny for pojisteny in self.pojisteni
-            if pojisteny.jmeno.lower() == jmeno.lower() and pojisteny.prijmeni.lower() == prijmeni.lower()
+            pojistenec for pojistenec in self.pojistenci
+            if pojistenec.jmeno.lower() == jmeno.lower() and pojistenec.prijmeni.lower() == prijmeni.lower()
         ]
