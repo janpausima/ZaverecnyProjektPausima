@@ -18,13 +18,19 @@ Data jsou uchovávána pouze v paměti po dobu běhu aplikace.
 
 ## Struktura projektu
 EvidencePojistencu/
-│
-├── main.py                      # spouštěcí soubor aplikace
-├── pojistenec.py                # třída pro pojištěnou osobu
-├── evidence_pojistenych.py      # správa kolekce pojištěných
-├── uzivatelske_rozhrani.py      # uživatelské rozhraní (komunikace s uživatelem)
-├── validace_vstupu.py           # validace vstupních dat
-└── README.md                    # dokumentace k projektu
+
+
+main.py/    #spouštěcí soubor aplikace
+
+pojistenec.py/  #třída pro pojištěnou osobu
+
+evidence_pojistenych.py/    #správa kolekce pojištěných
+
+uzivatelske_rozhrani.py/    #uživatelské rozhraní (komunikace s uživatelem)
+
+validace_vstupu.py/ #validace vstupních dat
+
+README.md/  #dokumentace k projektu
 
 ## Instalace a spuštění
 1. Stáhněte si či naklonujte repozitář:
